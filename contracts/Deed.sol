@@ -7,7 +7,7 @@ contract Deed{
 	uint public time;
 
 
-	constructor(address _sender, address payable _reciver, uint _time) payable  {
+	constructor(address _sender, address payable _reciver, uint _time) payable public {
 		sender = _sender;
 		reciver = _reciver;
 		time = block.timestamp + _time;
